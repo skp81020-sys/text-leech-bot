@@ -1,4 +1,4 @@
- import time
+import time
 import math
 import os
 import random
@@ -218,3 +218,4 @@ async def progress_bar(current, total, reply, start):
                 await reply.edit(f'\n**╭─⌯══⟰ 𝐔𝐩𝐥𝐨𝐝𝐢𝐧𝐠 ⟰══⌯──★ \n├⚡ {progress_bar}|﹝{perc}﹞ \n├🚀 Speed » {sp} \n├📟 Processed » {cur}\n├🧲 Size - ETA » {tot} - {eta} \n╰─══ ✪  𝗔𝘀𝗵𝘂𝘁𝗼𝘀𝗵 𝗚𝗼𝘀𝘄𝗮𝗺𝗶 𝟮𝟰 ✪ ══─★**\n') 
             except FloodWait as e:
                 time.sleep(e.x)
+
