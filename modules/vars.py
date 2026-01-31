@@ -7,11 +7,10 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 WEBHOOK = True  
 PORT = int(os.environ.get("PORT", 8870))  
 
-# 👇👇 YEH TUMHARA TOKEN 👇👇
+# 👇👇 NAYA TOKEN (Org ID: 9183) 👇👇
 CLASSPLUS_TOKENS = os.environ.get("CLASSPLUS_TOKENS", 
-    "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYxMTE2NDcxLCJvcmdJZCI6NjI3MTc3LCJ0eXBlIjoxLCJtb2JpbGUiOiI5MTk1MDQ5MzczMDkiLCJuYW1lIjoiU2F0aXNoIEt1bWFyIiwiZW1haWwiOm51bGwsImlzSW50ZXJuYXRpb25hbCI6MCwiZGVmYXVsdExhbmd1YWdlIjoiRU4iLCJjb3VudHJ5Q29kZSI6IklOIiwiY291bnRyeUlTTyI6IjkxIiwidGltZXpvbmUiOiJHTVQrNTozMCIsImlzRGl5Ijp0cnVlLCJvcmdDb2RlIjoiamZxcnhjIiwiaXNEaXlTdWJhZG1pbiI6MCwiZmluZ2VycHJpbnRJZCI6IjhkMThhYTlkY2RkYzRiY2FiMGU1N2FlZjMyNzdmNjRjIiwiaWF0IjoxNzY5ODg5NjYzLCJleHAiOjE3NzA0OTQ0NjN9.8DDauOaXrG-mwK1qUQDgwqVE-6aMBLYLbQv6i5N5y7bC5SajqSjHPzt8UJUqbZ8a"
+    "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTU1Njk1MTI4LCJvcmdJZCI6OTE4MywidHlwZSI6MSwibW9iaWxlIjoiOTE5NTA0OTM3MzA5IiwibmFtZSI6InNhdGlzaCBLdW1hciIsImVtYWlsIjoic2twODEwMjBAZ21haWwuY29tIiwiaXNJbnRlcm5hdGlvbmFsIjowLCJkZWZhdWx0TGFuZ3VhZ2UiOiJFTiIsImNvdW50cnlDb2RlIjoiSU4iLCJjb3VudHJ5SVNPIjoiOTEiLCJ0aW1lem9uZSI6IkdNVCs1OjMwIiwiaXNEaXkiOnRydWUsIm9yZ0NvZGUiOiJpcXZxbiIsImlzRGl5U3ViYWRtaW4iOjAsImZpbmdlcnByaW50SWQiOiIxZmVmOTZmZTkzN2U0N2MwOWNlYzc3MTgyZDE4N2M2YyIsImlhdCI6MTc2OTg5MDYwOSwiZXhwIjoxNzcwNDk1NDA5fQ.CWy4R1JMi-aqdQ9_JKkr1OXUCM6Iv-X1I8oR_zEzM5HQ9NUMYPYLlFtw_2CS6EkO"
 ).split(",")
 
-# Clean tokens
 CLASSPLUS_TOKENS = [token.strip() for token in CLASSPLUS_TOKENS if token.strip()]
-print(f"✅ Loaded {len(CLASSPLUS_TOKENS)} ClassPlus token(s) for user: Satish Kumar")
+print(f"✅ Loaded {len(CLASSPLUS_TOKENS)} token(s) for Org: 9183")
