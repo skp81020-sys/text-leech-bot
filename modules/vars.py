@@ -4,21 +4,14 @@ API_ID    = os.environ.get("API_ID", "")
 API_HASH  = os.environ.get("API_HASH", "")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
 
-WEBHOOK = True  # Don't change this
-PORT = int(os.environ.get("PORT", 8870))  # Default to 8870 if not set
+WEBHOOK = True  
+PORT = int(os.environ.get("PORT", 8870))  
 
-# ==================== CLASSPLUS MULTIPLE TOKENS ====================
-# Add multiple tokens here comma separated to avoid 403 errors
-# Format: "token1,token2,token3"
-# Or use environment variable: CLASSPLUS_TOKENS
-
+# 👇👇 YEH TUMHARA TOKEN 👇👇
 CLASSPLUS_TOKENS = os.environ.get("CLASSPLUS_TOKENS", 
-    # Default token (replace with your actual tokens)
-    "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgzNjkyMTIsIm9yZ0lkIjoyNjA1LCJ0eXBlIjoxLCJtb2JpbGUiOiI5MTcwODI3NzQyODkiLCJuYW1lIjoiQWNlIiwiZW1haWwiOm51bGwsImlzRmlyc3RMb2dpbiI6dHJ1ZSwiZGVmYXVsdExhbmd1YWdlIjpudWxsLCJjb3VudHJ5Q29kZSI6IklOIiwiaXNJbnRlcm5hdGlvbmFsIjowLCJpYXQiOjE2NDMyODE4NzcsImV4cCI6MTY0Mzg4NjY3N30.hM33P2ai6ivdzxPPfm01LAd4JWv-vnrSxGXqvCirCSpUfhhofpeqyeHPxtstXwe0,"
-    # Add more tokens here (make sure to end with quote)
+    "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYxMTE2NDcxLCJvcmdJZCI6NjI3MTc3LCJ0eXBlIjoxLCJtb2JpbGUiOiI5MTk1MDQ5MzczMDkiLCJuYW1lIjoiU2F0aXNoIEt1bWFyIiwiZW1haWwiOm51bGwsImlzSW50ZXJuYXRpb25hbCI6MCwiZGVmYXVsdExhbmd1YWdlIjoiRU4iLCJjb3VudHJ5Q29kZSI6IklOIiwiY291bnRyeUlTTyI6IjkxIiwidGltZXpvbmUiOiJHTVQrNTozMCIsImlzRGl5Ijp0cnVlLCJvcmdDb2RlIjoiamZxcnhjIiwiaXNEaXlTdWJhZG1pbiI6MCwiZmluZ2VycHJpbnRJZCI6IjhkMThhYTlkY2RkYzRiY2FiMGU1N2FlZjMyNzdmNjRjIiwiaWF0IjoxNzY5ODg5NjYzLCJleHAiOjE3NzA0OTQ0NjN9.8DDauOaXrG-mwK1qUQDgwqVE-6aMBLYLbQv6i5N5y7bC5SajqSjHPzt8UJUqbZ8a"
 ).split(",")
 
-# Remove empty tokens and strip whitespace
+# Clean tokens
 CLASSPLUS_TOKENS = [token.strip() for token in CLASSPLUS_TOKENS if token.strip()]
-
-print(f"✅ Loaded {len(CLASSPLUS_TOKENS)} ClassPlus token(s)")
+print(f"✅ Loaded {len(CLASSPLUS_TOKENS)} ClassPlus token(s) for user: Satish Kumar")
