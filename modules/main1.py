@@ -298,16 +298,7 @@ async def main():
         site = web.TCPSite(runner, "0.0.0.0", PORT)
         await site.start()
         print(f"🌐 Web server started on port {PORT}")
-# Line ~200 ke aas paas (video processing section mein)
-# Check if it's an image/thumbnail
-if any(ext in url.lower() for ext in ['.jpg', '.jpeg', '.png', '.webp']):
-    await m.reply_text(f"⚠️ **Skipping thumbnail:** `{url}`\nYeh image hai, video nahi!")
-    continue  # Skip to next link
-
-# Ya phir direct download as image
-if '.jpeg' in url or '.jpg' in url:
-    await m.reply_text("📷 Thumbnail image mila, skip kar raha hoon...")
-    continue
+ 
 if __name__ == "__main__":
     print("""
     █░█░█ █▀█ █▀█ █▀▄ █▀▀ █▀█ ▄▀█ █▀▀ ▀█▀    ▄▀█ █▀ █░█ █░█ ▀█▀ █▀█ █▀ █░█  
